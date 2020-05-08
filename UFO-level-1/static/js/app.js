@@ -47,9 +47,9 @@ button.on("click", function() {
 
   // populated filtered data if in put matches result else message
 
-  filteredData.forEach((eventFilter) => {
+  filteredData.forEach((records) => {
     var row = tbody.append("tr");
-    Object.entries(eventFilter).forEach(([key, value]) => {
+    Object.entries(records).forEach(([key, value]) => {
       var cell = row.append("td");
       cell.text(value);
     });
